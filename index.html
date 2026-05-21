@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Najmeh Hajimirza</title>
+  <meta name="description" content="Najmeh Hajimirza | PhD Candidate in Economics at Lund University" />
+  <style>
+    :root{
+      --text:#2f2f2f;
+      --muted:#666;
+      --line:#e6e6e6;
+      --bg:#ffffff;
+      --link:#1f4e79;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height:1.65;
+      font-size:18px;
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{
+      width:min(calc(100% - 48px), var(--max));
+      margin:0 auto;
+    }
+    .site-header{
+      border-bottom:1px solid var(--line);
+      padding:18px 0;
+    }
+    .nav-wrap{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+    .brand{
+      color:var(--text);
+      font-size:20px;
+      font-weight:700;
+      letter-spacing:0.01em;
+    }
+    .nav{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .nav a{
+      color:var(--text);
+      font-size:18px;
+    }
+    main{
+      padding:42px 0 60px;
+    }
+    .page-grid{
+      display:grid;
+      grid-template-columns:260px minmax(0, 1fr);
+      gap:56px;
+      align-items:start;
+    }
+    .sidebar{
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+    }
+    .sidebar img{
+      width:200px;
+      height:200px;
+      object-fit:cover;
+      object-position: center top;
+      border-radius:50%;
+      margin-bottom:18px;
+    }
+    .name{
+      font-size:19px;
+      font-weight:700;
+      margin:0 0 4px;
+    }
+    .position{
+      color:var(--muted);
+      font-size:16px;
+      margin:0 0 4px;
+    }
+    .institution{
+      color:var(--muted);
+      font-size:16px;
+      margin:0 0 18px;
+    }
+    .contact-list{
+      list-style:none;
+      padding:0;
+      margin:0;
+      font-size:16px;
+    }
+    .contact-list li{
+      margin:6px 0;
+      color:var(--muted);
+    }
+    .contact-list a{
+      color:var(--link);
+    }
+    .content h2{
+      margin:40px 0 10px;
+      font-size:22px;
+      font-weight:700;
+      border-bottom:1px solid var(--line);
+      padding-bottom:6px;
+    }
+    .content h2.small-heading{
+      font-size:17px;
+      font-weight:600;
+      color:var(--muted);
+      border-bottom:none;
+      margin:36px 0 8px;
+      padding-bottom:0;
+    }
+    .content p{
+      margin:0 0 16px;
+    }
+    .news-list{
+      margin:10px 0 0 0;
+      padding-left:20px;
+    }
+    .news-list li{
+      margin-bottom:8px;
+    }
+    .footer{
+      border-top:1px solid var(--line);
+      padding:18px 0 30px;
+      color:var(--muted);
+      font-size:15px;
+    }
+    @media (max-width: 850px){
+      body{font-size:17px}
+      .page-grid{grid-template-columns:1fr; gap:28px}
+      .sidebar{align-items:center; text-align:center;}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Najmeh Hajimirza</a>
+      <nav class="nav">
+        <a href="index.html">About</a> &middot;
+        <a href="research.html">Research</a> &middot;
+        <a href="najmeh_hajimirza_cv.pdf">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-grid">
+
+      <aside class="sidebar">
+        <img src="photo.jpg" alt="Najmeh Hajimirza">
+        <p class="name">Najmeh Hajimirza</p>
+        <p class="position">PhD Candidate in Economics</p>
+        <p class="institution">Lund University</p>
+        <ul class="contact-list">
+          <li><a href="mailto:najmeh.hajimirza@nek.lu.se">najmeh.hajimirza@nek.lu.se</a></li>
+          <li><a href="https://www.linkedin.com/in/najmeh-hajimirza/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </aside>
+
+      <section class="content">
+
+        <p>
+          I am a PhD candidate in Economics at Lund University, affiliated with the
+          Knut Wicksell Centre for Financial Studies.
+          My research is in empirical finance, with a focus on banking, financial intermediation,
+          and the interface between environmental policy and credit markets.
+        </p>
+
+        <p>
+          You can download my CV <a href="najmeh_hajimirza_cv.pdf">here</a>.
+        </p>
+
+        <!-- Uncomment and add news items when relevant
+        <h2>News</h2>
+        <ul class="news-list">
+          <li></li>
+        </ul>
+        -->
+
+        <h2 class="small-heading">Outside research</h2>
+        <p>
+          In my free time, I enjoy reading, cooking, and gardening.
+          You can find my reading list on <a href="https://www.goodreads.com/najmeh_ha" target="_blank" rel="noopener">Goodreads</a>.
+        </p>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      &copy; Najmeh Hajimirza &middot; Last updated May 2026
+    </div>
+  </footer>
+</body>
+</html>
